@@ -9,6 +9,9 @@
 	<title><?php 
 		if(is_404()){
 			echo 'error 404';
+		}elseif(is_category( 'doors') )
+		{
+			echo 'Каталог';
 		}else{
 			the_title(); 
 		}
